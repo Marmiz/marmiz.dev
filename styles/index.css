@@ -13,3 +13,18 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+#Logo {
+  stroke-dasharray: 2255;
+  stroke-dashoffset: 2255;
+  stroke-width: 4;
+  animation: sign 6s ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
