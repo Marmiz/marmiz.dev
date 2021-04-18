@@ -13,8 +13,10 @@ type Props = {
 };
 
 const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  // Keeping heroPost in case later we want to utilize it.
+  // So far all content is displayed equally.
+  let heroPost: Post | undefined;
+  const morePosts = allPosts;
   return (
     <>
       <Layout>
@@ -23,17 +25,19 @@ const Index = ({ allPosts }: Props) => {
         </Head>
         <Container>
           <Intro title="Blog" withSide={true} />
-          {heroPost && (
+          {heroPost ? (
             <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
+              title={heroPost?.title}
+              coverImage={heroPost?.coverImage}
+              date={heroPost?.date}
+              author={heroPost?.author}
+              slug={heroPost?.slug}
+              excerpt={heroPost?.excerpt}
             />
+          ) : null}
+          {morePosts.length > 0 && (
+            <MoreStories posts={morePosts} withH2={false} />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>

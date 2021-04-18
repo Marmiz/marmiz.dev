@@ -48,7 +48,7 @@ export function getAllPosts(fields: string[] = []) {
 }
 
 // Almost identical to getPostBySlug.
-// Kept separate as ideologically belogs to two different groups.
+// Kept separate as ideologically belongs to two different groups.
 export function getContentBySlug(slug: string, fields: string[] = []) {
   const fullPath = join(contentDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
