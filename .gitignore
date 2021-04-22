@@ -35,3 +35,11 @@ yarn-error.log*
 
 # vscode workspace settings
 .vscode
+
+# Cargo wasm
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log
