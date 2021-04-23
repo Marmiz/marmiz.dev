@@ -31,7 +31,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-32 mx-auto max-w-6xl ">
               <Head>
                 <title>
                   {post.title} | {META_TITLE}
