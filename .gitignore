@@ -40,5 +40,6 @@ yarn-error.log*
 /target
 **/*.rs.bk
 Cargo.lock
+pkg/
 bin/
 wasm-pack.log
