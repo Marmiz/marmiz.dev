@@ -1688,10 +1688,10 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.3.tgz#9fcb69bcfdb8717bfd0398c6ec2d93036ef8de60"
   integrity sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q==
 
-marmiz-wasm-game-of-life@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/marmiz-wasm-game-of-life/-/marmiz-wasm-game-of-life-0.1.1.tgz#fc326e5381477bbf8845e9499040dc19e46a02b1"
-  integrity sha512-OM6QKDMGFCU52FlMA779IN7MAoTpr21cBkNBKLmBZEzFC8m63hYW4ie7k0ikj+bwUzE+xJ7evQYoYSnZ+LgHnQ==
+marmiz-wasm-game-of-life@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/marmiz-wasm-game-of-life/-/marmiz-wasm-game-of-life-0.1.3.tgz#069600c02dd4d0c2d9d20588933d7e8f2ee13515"
+  integrity sha512-QIpgv15HxcyF2aREZlTh8dNbmMCF+xDbawtJCzk+ajxUdMl2Q6Ypn8Why2MsT12MAsUEnaUzIXV3B9bbNVI+uA==
 
 md5.js@^1.3.4:
   version "1.3.5"
