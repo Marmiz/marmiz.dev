@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "next",
     "build": "yarn build:rust & next build",
-    "build:rust": "wasm-pack build",
     "start": "next start",
     "typecheck": "tsc"
   },
@@ -12,6 +11,7 @@
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
+    "marmiz-wasm-game-of-life": "^0.1.1",
     "next": "latest",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

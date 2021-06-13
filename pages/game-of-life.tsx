@@ -4,8 +4,10 @@ import { useState, useRef, useEffect } from "react";
 const RustComponent = dynamic({
   loader: async () => {
     // Import wasm module
-    const { Universe, Cell } = await import("../pkg");
-    const { memory } = await import("../pkg/wasm_in_next_bg.wasm");
+    const { Universe, Cell } = await import("marmiz-wasm-game-of-life");
+    const { memory } = await import(
+      "marmiz-wasm-game-of-life/marmiz_wasm_game_of_life_bg.wasm"
+    );
     // return a React component that uses renderAnimationFrame for the game.
     return () => {
       const universe = Universe.new();
